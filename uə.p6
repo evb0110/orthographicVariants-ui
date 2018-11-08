@@ -11,7 +11,6 @@ my @uwords = @words.grep({/$uletter/});
 my @əwords = @words.grep({/$əletter/});
 my $set_əwords = @əwords.Set;
 
-
 for @uwords -> $uword {
   my @ind = $uword.indices($uletter);
   for @ind -> $index {
